@@ -1,0 +1,150 @@
+body {
+	margin: 0;
+	padding: 0;
+	min-width: 1200px;
+
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #283136;
+
+	background-color: #fff;
+}
+a {
+	text-decoration: none;
+}
+ul {
+	list-style: none;
+}
+.container {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	clip: rect(0, 0, 0, 0);
+}
+.main-header {
+	background-color: #eeeeee;
+}
+.main-navigation a {
+	color: #000;
+}
+.button {
+	display: inline-block;
+	padding: 10px 30px;
+	margin-right: 16px;
+	font: inherit;
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+	background-color: #fb565a;
+	border-radius: 3px;
+	border: none;
+}
+.button:hover,
+.button:focus {
+	background-color: #e74246;
+}
+.button:active {
+	color: rgba(255, 255, 255, 0.3);
+	background-color: #d7373b;
+	box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+}
+.slider {
+	position: relative;
+	background-color: #eeeeee;
+}
+.slider-controls {
+	position: absolute;
+	left: 50%;
+	bottom: 104px;
+	z-index: 100;
+
+	width: 160px;
+	height: 18px;
+
+	text-align: center;
+	font-size: 0;
+	transform: translateX(-50%);
+}
+.slider-controls label {
+	position: relative;
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	padding: 8px;
+
+	border-radius: 50%;
+	cursor: pointer; 
+
+}
+.slider-controls label::after {
+	content: "";
+	position: absolute;
+	top: 8px;
+	left: 8px;
+
+
+	width: 18px;
+	height: 18px;
+
+	background: #fff;
+	border-radius: 50%;
+}
+.slider-controls label::before {
+	content: "";
+
+	position: absolute;
+	left: 50%;
+	top: 50%;
+
+	width: 4px;
+	height: 4px;
+	margin: -4px;
+
+	background-color: inherit;
+	border: 2px solid #c1c1c1;
+	border-radius: 50%;
+}
+.slider-item {
+	margin: 0;
+	padding: 0;
+	padding: 78px 0 80px 0;	
+	
+}
+.sl-1 {
+	background-image: url("../img/slide1.png");
+	background-repeat: no-repeat;
+	background-position: 93% 18px;
+}
+.sl-2 {
+	background-image: url("../img/slide2.png");
+	background-repeat: no-repeat;
+	background-position: 100% 0;
+}
+.sl-3 {
+	background-image: url("../img/slide3.png");
+	background-repeat: no-repeat;
+	background-position: 100% 20px;
+}
+.slider-item h2{
+	max-width: 600px;
+	margin: 0;
+	margin-bottom: 27px;
+
+	font-size: 55px;
+	line-height: 55px;
+	font-weight: 500;
+}
+.slider-item p {
+	max-width: 430px;
+	margin: 0;
+	margin-bottom: 38px;
+}
